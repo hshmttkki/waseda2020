@@ -180,7 +180,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instAttributePractice: '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'<b>E</b>のキーに左手を置いてください。このキーは<font color="#0000ff">leftAttribute.</font>のカテゴリに対して押してください。' +
+				'<b>E</b>のキーに左手を置いてください。このキーは<font color="#0000ff">leftAttribute</font>のカテゴリに対して押してください。' +
 				'<br/><b>I</b>のキーに右手の指を置いてください。このキーは<font color="#0000ff">rightAttribute</font>のカテゴリに対して押してください。<br/><br/>' +
 				'回答を間違えると赤い<font color="#ff0000"><b>X</b></font>が表示されます。' +
 				'もう一方のキーを押して進んでください。<br/>' +
@@ -208,7 +208,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
 				'E</b>のキーに左手を置いてください。このキーは<font color="#336600">leftCategory</font>のカテゴリに対して押してください。' +
 				'<br/><b>I</b>のキーに右手の指を置いてください。このキーは<font color="#336600">rightCategory</font>のカテゴリに対して押してください。<br/>' +
-				'Items will appear one at a time.<br/><br/>' +
+				'項目はひとつずつ表示されます。<br/><br/>' +
 				'回答を間違えると赤い<font color="#ff0000"><b>X</b></font>が表示されます。' +
 				'もう一方のキーを押して進んでください。<br/>' +
 				'なるべく正確に、かつ<u>できるだけ速く</u>回答するよう心がけてください。<br/><br/></p>'+
@@ -259,12 +259,12 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instSecondCombined : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'This is the same as the previous part.<br/>' +
-				'Use the <b>E</b> key for <font color="#336600">leftCategory</font> and for <font color="#0000ff">leftAttribute</font>.<br/>' +
-				'Use the <b>I</b> key for <font color="#336600">rightCategory</font> and for  <font color="#0000ff">rightAttribute</font>.<br/>' +
-				'Each item belongs to only one category.<br/><br/>' +
-				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>' +
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'次も同じ形式です。<br/>' +
+				'<b>E</b>キーが<font color="#336600">leftCategory</font>と<font color="#0000ff">leftAttribute</font>の両方に対応します。<br/>' +
+				'<b>I</b>キーが<font color="#336600">rightCategory</font>と<font color="#0000ff">rightAttribute</font>の両方に対応します。<br/>' +
+				'表示される項目はどれかひとつのカテゴリに対応します。<br/><br/>' +
+				'なるべく正確に、かつ<u>できるだけ速く</u>回答するよう心がけてください。<br/><br/></p>' +
+				'<p align="center">準備ができたら<b>スペースキー</b>を押して開始してください。</font></p></div>',
 			instSecondCombinedTouch:[
 				'<div>',
 					'<p align="center"><u>Part blockNum of nBlocks</u></p>',
@@ -284,11 +284,11 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instSwitchCategories : '<div><p align="center" style="font-size:20px; font-family:arial">' +
 				'<font color="#000000"><u>Part blockNum of nBlocks </u><br/><br/></p>' +
 				'<p style="font-size:20px; text-align:left; vertical-align:bottom; margin-left:10px; font-family:arial">' +
-				'<b>Watch out, the labels have changed position!</b><br/>' +
-				'Put the left finger on the <b>E</b> key for <font color="#336600">leftCategory</font>.<br/>' +
-				'Put the right finger on the <b>I</b> key for <font color="#336600">rightCategory</font>.<br/><br/>' +
-				'<u>Go as fast as you can</u> while being accurate.<br/><br/></p>' +
-				'<p align="center">Press the <b>space bar</b> when you are ready to start.</font></p></div>',
+				'<b>ラベルの左右が入れ替わったので、注意してください！</b><br/>' +
+				'<b>E</b>キーに左手の指を置いてください。このキーは<font color="#336600">leftCategory</font>に対応します。<br/>' +
+				'<b>I</b>キーに右手の指を置いてください。このキーは<font color="#336600">rightCategory</font>に対応します。<br/><br/>' +
+				'<u>なるべく正確に、かつ<u>できるだけ速く</u>回答するよう心がけてください。<br/><br/></p>' +
+				'<p align="center">準備ができたら<b>スペースキー</b>を押して開始してください。</font></p></div>',
 			instSwitchCategoriesTouch: [
 				'<div>',
 					'<p align="center">',
