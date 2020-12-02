@@ -20,9 +20,9 @@ var posWords = API.shuffle([
             'わざわい', '弱い', 'ひどい', '怒り']);
 	return iatExtension({
 		category1 : {
-			name : 'Old people', //Will appear in the data.
+			name : '老人', //Will appear in the data.
 			title : {
-				media : {word : 'Old people'}, //Name of the category presented in the task.
+				media : {word : '老人'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'1.8em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
@@ -38,9 +38,9 @@ var posWords = API.shuffle([
 			stimulusCss : {color:'#31940F','font-size':'1.8em'}
 		},	
 		category2 :	{
-			name : 'Young people', //Will appear in the data.
+			name : '若者', //Will appear in the data.
 			title : {
-				media : {word : 'Young people'}, //Name of the category presented in the task.
+				media : {word : '若者'}, //Name of the category presented in the task.
 				css : {color:'#31940F','font-size':'1.8em'}, //Style of the category title.
 				height : 4 //Used to position the "Or" in the combined block.
 			}, 
@@ -57,9 +57,9 @@ var posWords = API.shuffle([
 		},	
 	attribute1 :
 		{
-			name : 'Bad',
+			name : '悪い',
 			title : {
-				media : {word : 'Bad'},
+				media : {word : '悪い'},
 				css : {color:'#0000FF','font-size':'1.8em'},
 				height : 4 //Used to position the "Or" in the combined block.
 			},
@@ -78,9 +78,9 @@ var posWords = API.shuffle([
 		},
 		attribute2 :
 		{
-			name : 'Good',
+			name : '良い',
 			title : {
-				media : {word : 'Good'},
+				media : {word : '良い'},
 				css : {color:'#0000FF','font-size':'1.8em'},
 				height : 4 //Used to position the "Or" in the combined block.
 			},
