@@ -1,23 +1,23 @@
-define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualtrics/quiat9.js'], function(APIConstructor, iatExtension){
+ï»¿define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/IAT/qualtrics/quiat9.js'], function(APIConstructor, iatExtension){
     var API = new APIConstructor();
 var posWords = API.shuffle([
-            '‹P‚©‚µ‚¢', 'Œ³‹C', 'Å‚', 'Œ©Ž–‚È', 
-            '‚·‚Î‚ç‚µ‚¢', '³“–', '—Ç‚¢', '³‚µ‚¢', 
-            'D‚«','‚¤‚ê‚µ‚¢', 'Šì‚Ñ', 'K‰^‚È', 
-            '‚«‚ê‚¢', '‚ ‚½‚½‚©‚¢', '–¾‚é‚¢', '‚¨‚à‚µ‚ë‚¢', 
-            '‰õ‚¢', 'Ï‹É“I', '—FD“I‚È','K‚¹‚È', 
-            '—DG‚È', '‰hŒõ', '•½˜a', 'ÎŠç', 
-            '‚©‚í‚¢‚¢', '–ž‘«‚È', 'Šy‚µ‚¢', '‘f“G‚È', 
-            'j•Ÿ', 'ˆ¤î', '–£—Í‚ ‚é', 'Š´“®']);
+            'è¼ã‹ã—ã„', 'å…ƒæ°—', 'æœ€é«˜', 'è¦‹äº‹ãª', 
+            'ã™ã°ã‚‰ã—ã„', 'æ­£å½“', 'è‰¯ã„', 'æ­£ã—ã„', 
+            'å¥½ã','ã†ã‚Œã—ã„', 'å–œã³', 'å¹¸é‹ãª', 
+            'ãã‚Œã„', 'ã‚ãŸãŸã‹ã„', 'æ˜Žã‚‹ã„', 'ãŠã‚‚ã—ã‚ã„', 
+            'å¿«ã„', 'ç©æ¥µçš„', 'å‹å¥½çš„ãª','å¹¸ã›ãª', 
+            'å„ªç§€ãª', 'æ „å…‰', 'å¹³å’Œ', 'ç¬‘é¡”', 
+            'ã‹ã‚ã„ã„', 'æº€è¶³ãª', 'æ¥½ã—ã„', 'ç´ æ•µãª', 
+            'ç¥ç¦', 'æ„›æƒ…', 'é­…åŠ›ã‚ã‚‹', 'æ„Ÿå‹•']);
   var negWords = API.shuffle([
-            'ˆ«‚¢', '—ò‚Á‚Ä‚¢‚é', 'ŠÔˆá‚¢', '•s‰õ', 
-            'Œ™‚¢', '•s“–', 'Ž¸”s', '“f‚«‹C', 
-            '•s‰^‚È', '‚«‚½‚È‚¢', '’É‚Ü‚µ‚¢', 'Å’á', 
-            '‚Â‚ß‚½‚¢', '‚¢‚¶‚í‚é', '‚Â‚Ü‚ç‚È‚¢', 'ˆÃ‚¢', 
-            '‹°‚ë‚µ‚¢','‚ª‚Á‚©‚è', '“Å', '”ß‚µ‚Ý',  
-            '•s³', '‹ê”Y', '‚Ý‚É‚­‚¢', 'Ž×ˆ«‚È', 
-            '¢‚é', '‚É‚­‚µ‚Ý', '‚¢‚ç‚¢‚ç', 'Ð“ï', 
-            '‚í‚´‚í‚¢', 'Žã‚¢', '‚Ð‚Ç‚¢', '“{‚è']);
+            'æ‚ªã„', 'åŠ£ã£ã¦ã„ã‚‹', 'é–“é•ã„', 'ä¸å¿«', 
+            'å«Œã„', 'ä¸å½“', 'å¤±æ•—', 'åãæ°—', 
+            'ä¸é‹ãª', 'ããŸãªã„', 'ç—›ã¾ã—ã„', 'æœ€ä½Ž', 
+            'ã¤ã‚ãŸã„', 'ã„ã˜ã‚ã‚‹', 'ã¤ã¾ã‚‰ãªã„', 'æš—ã„', 
+            'æã‚ã—ã„','ãŒã£ã‹ã‚Š', 'æ¯’', 'æ‚²ã—ã¿',  
+            'ä¸æ­£', 'è‹¦æ‚©', 'ã¿ã«ãã„', 'é‚ªæ‚ªãª', 
+            'å›°ã‚‹', 'ã«ãã—ã¿', 'ã„ã‚‰ã„ã‚‰', 'ç½é›£', 
+            'ã‚ã–ã‚ã„', 'å¼±ã„', 'ã²ã©ã„', 'æ€’ã‚Š']);
 	return iatExtension({
 		category1 : {
 			name : 'Old people', //Will appear in the data.
