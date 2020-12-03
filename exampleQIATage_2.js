@@ -1,4 +1,4 @@
-﻿define(['pipAPI', 'https://cdn.jsdelivr.net/gh/hshmttkki/waseda2020@v1.4/quiat9.js'], function(APIConstructor, iatExtension){
+﻿define(['pipAPI', 'https://cdn.jsdelivr.net/gh/hshmttkki/waseda2020@v1.5/quiat9.js'], function(APIConstructor, iatExtension){
     var API = new APIConstructor();
 var posWords = API.shuffle([
             '輝かしい', '元気', '最高', '見事な', 
