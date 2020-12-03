@@ -287,7 +287,7 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 				'<b>ラベルの左右が入れ替わったので、注意してください！</b><br/>' +
 				'<b>E</b>キーに左手の指を置いてください。このキーは<font color="#336600">leftCategory</font>に対応します。<br/>' +
 				'<b>I</b>キーに右手の指を置いてください。このキーは<font color="#336600">rightCategory</font>に対応します。<br/><br/>' +
-				'<u>なるべく正確に、かつ<u>できるだけ速く</u>回答するよう心がけてください。<br/><br/></p>' +
+				'なるべく正確に、かつ<u>できるだけ速く</u>回答するよう心がけてください。<br/><br/></p>' +
 				'<p align="center">準備ができたら<b>スペースキー</b>を押して開始してください。</font></p></div>',
 			instSwitchCategoriesTouch: [
 				'<div>',
@@ -312,6 +312,15 @@ define(['pipAPI','pipScorer','underscore'], function(APIConstructor, Scorer, _) 
 			instThirdCombinedTouch : 'instFirstCombined', //this means that we're going to use the instFirstCombined property for the third combined block as well. You can change that.
 			instFourthCombinedTouch : 'instSecondCombined', //this means that we're going to use the instSecondCombined property for the fourth combined block as well. You can change that.
 
+		showDebriefing:false, //Show feedback in the last trial? Relevant only in a Qualtrics IAT because in Qualtrics we cannot access the saved feedback and IAT score later in the survey.
+			//Texts for the trials that show the debriefing.
+			preDebriefingText : 'Press space to see your result', //Text in the trial that comes before showing the debriefing.
+			preDebriefingTouchText : 'Touch the bottom green area to see your result', //Touch version for the text in the trial that comes before showing the debriefing.
+			debriefingTextTop : 'Your result:', //Will be shown above the feedback text.
+			//ATTENTION: We do not recommend showing participants their results. The IAT is a typical psychological measure so it is not very accurate. 
+			//In Project Implicit's website, you can see that we added much text to explain that there is still much unknown about the meaning of these results.
+			//We strongly recommend that you provide all these details in the debriefing of the experiment.
+			debriefingTextBottom : 'This result is not a definitive assessment of your attitudes. It is provided for educational purposes only.  Press space to continue.', //Will be shown below the feedback text. 
             debriefingTextBottomTouch : 'This result is not a definitive assessment of your attitudes. It is provided for educational purposes only.  Touch the green area to continue.',
 			//The default feedback messages for each cutoff -
 			//attribute1, and attribute2 will be replaced with the name of attribute1 and attribute2.
